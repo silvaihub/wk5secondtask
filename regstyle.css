@@ -1,0 +1,13 @@
+.reg{
+    background-color: darkgoldenrod;
+    text-transform: capitalize;
+    
+};
+#top{
+    text-decoration-line: underline
+
+};
+#sub{
+    justify-content: flex-end
+};
+

@@ -8,29 +8,32 @@
     </head>
     <body>
         
-        <form class="reg" name="reg" onsubmit= "return validFun()" method="post">
-            <h2 id="top">registration form </h2>
+        <form class="register" name="reg">
+            <p  class="top">registration form </p>
            
-            <label >first name</label>
-            <input id="fName" type="text"></input>
+            <label class="demo">first name</label>
+            <input class="fname" type="text" minlength="8" maxlength="12" required ></input>
             <br><br>
-            <label >last name</label>
-            <input id="lName" type="text"></input>
+            <label class="demo">last name</label>
+            <input class="lname" type="text" minlength="8" maxlength="12" required></input>
             <br><br>
-            <label>email address</label>
-            <input id="mail" type="email"></input>
+            <label class="demo">email address</label>
+            <input class="enter" type="email" multiple required  ></input>
             <br><br>
-            <label>username</label>
-            <input id="user" type="text"></input>
+            <label class="demo">username</label>
+            <input class="enter" type="text" 
+                
+                required maxlength="8" minlength="6" 
+                pattern="([a-z]|[A-Z]&&[0-9]&&@|#|$|_|-|+|%|*)" title="must contain special characters and at least one number"></input>
             <br><br>
-            <label>password</label>
-            <input id="pass" type="password"></input>
+            <label class="demo">password</label>
+            <input id="enter" type="password" required autocomplete="off"></input>
             <br><br>
-            <label>retype password</label>
-            <input id="repass" type="password"></input>
+            <label class="demo">retype password</label>
+            <input class="renter" type="password" required autocomplete="off"></input>
             <br><br><br>
-            <div id="sub">
-            <button id="btnSub">SUBMIT</button>
+            <div class="sub">
+            <button class="btnSub" onclick="validFun()">SUBMIT</button>
                 </div>
             <br><br>
         </form>

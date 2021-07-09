@@ -1,31 +1,19 @@
-const first= document.reg.fName;
-const last= document.reg.lName;
-const address= document.reg.mail;
-const use= document.reg.user;
-const pswd= document.reg.pass;
-const repswd = document.reg.repswd;
-const submit = document.querySelector(#btnSub);
+function validFun(event){
+var p1 = document.getElementById('enter').innerHTML;
+var p2 = document.getElementById('renter').innerHTML;
 
-function validFun(e)
-{
-    e.preventDefault();
-    if (reg.value = null || reg.value = " ")
-       { alert( "no field should be empty");
-        return false };
-    else if (first.value || last.value < 8 $$ > 12)
-            {
-        alert("length of text does not match");
-        return false};
-    else if (first.value === last.value)
-            {
-        alert("first name and last can't be same");
-        return false};
-    else
-{
-        alert("form submitted")
+if ((p1.value === p2.value) && (fname.value !=== lname.value))
+    {
+              alert("form submitted")
+              };
+          else {
+              
+                
+      event.preventDefault();
+  alert("invalid format!:, 'your password must match and your first name must differ from lastname'");
+                  return false }
     };
-    
-};
 
-submit.addEventListener("click",validFun(e));
+btnSub.addEventListener('click',validFun);            
+       
 
